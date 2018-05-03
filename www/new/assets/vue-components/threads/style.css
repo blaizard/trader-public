@@ -1,0 +1,23 @@
+.threads {
+	font-size: 0.8em;
+	-webkit-columns: 4 300px;
+	-moz-columns: 4 300px;
+	columns: 4 300px;
+}
+
+.threads .thread {
+	margin-right: 10px;
+}
+
+.threads .thread .status {
+	width: 1em;
+	height: 1em;
+	border: 1px solid #aaa;
+	display: inline-block;
+	margin-right: 5px;
+	background-color: #f9bf3b;
+}
+
+.threads .thread .status.active {
+	background-color: #5fba7d;
+}

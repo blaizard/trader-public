@@ -1,0 +1,36 @@
+.metric {
+	min-width: 200px;
+	height: 100px;
+	display: inline-block;
+	border: 1px solid #ddd;
+	overflow: hidden;
+	padding: 0;
+	white-space: nowrap;
+	text-align: center;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.metric .text {
+	padding: 5px 10px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 20px;
+	text-align: left;
+}
+
+.metric .value {
+	padding-left: 10px;
+	padding-right: 5px;
+	line-height: 100px;
+	font-size: 48px;
+	margin-top: -14px;
+	display: inline-block;
+
+}
+
+.metric .unit {
+	padding-right: 10px;
+	font-size: 20px;
+	display: inline-block;
+}

@@ -1,0 +1,64 @@
+.exchange-orders {
+}
+
+.exchange-orders .active-orders {
+	margin-bottom: 20px;
+}
+
+.exchange-orders .history {
+}
+
+/* ==== order ==== */
+
+.exchange-orders .title {
+	white-space: nowrap;
+	padding: 2px 5px;
+}
+
+.exchange-orders .title {
+	font-weight: bold;
+}
+
+.exchange-orders .title > span {
+	display: inline-block;
+	text-align: center;
+	padding: 0 5px;
+
+}
+
+.exchange-orders .notification .item {
+	cursor: pointer;
+}
+
+.exchange-orders .notification .nb {
+	background-color: #599;
+	border-radius: 1em;
+	color: white;
+	padding: 1px 3px;
+	margin-left: -0.5em;
+	font-size: 0.5em;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+.exchange-orders .order {
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.exchange-orders .record-item,
+.exchange-orders .order {
+	line-height: 2em;
+}
+
+.exchange-orders .record-notification {
+	display: none;
+}
+
+.exchange-orders .record-item.showNotification + .record-notification {
+	display: table-row;
+}
+
+.exchange-orders .record-notification td {
+	padding-left: 50px;
+}

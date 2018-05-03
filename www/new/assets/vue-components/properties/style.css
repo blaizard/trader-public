@@ -1,0 +1,60 @@
+.properties {
+	-webkit-columns: 4 300px;
+	-moz-columns: 4 300px;
+	columns: 4 300px;
+}
+
+.properties .item {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.properties .item .name {
+	margin-right: 5px;
+}
+
+.properties .item .value {
+	background: #ddd;
+	border: solid 1px #eee;
+	border-radius: 6px;
+	font-size: 80%;
+	padding: 2px 5px;
+	font-family: "Inconsolata","Consolata","Monaco",monospace;
+	white-space: pre-line;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.properties .item .array:before {
+	content: '[';
+	padding-right: 3px;
+}
+
+.properties .item .array:after {
+	content: ']';
+	padding-left: 3px;
+}
+
+.properties .item .array .value {
+	margin: 0 3px;
+}
+
+.properties .item .object:before {
+	content: '{';
+	padding-right: 3px;
+}
+
+.properties .item .object:after {
+	content: '}';
+	padding-left: 3px;
+}
+
+.properties .item .object .value {
+	margin: 0 3px;
+}
+
+.properties .item .array,
+.properties .item .object {
+	white-space: normal;
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Trader</title>
+		<meta name="description" content=""/>
+		<meta charset="utf-8"/>
+
+		<base href="../" />
+
+		<!-- Load minimal ressources //-->
+		<script src="new/lib/irrequire/irrequire.min.js"></script>
+		<script src="new/lib/irrequire/irrequire.progress.js"></script>
+		<script src="new/irrequire.deps.js"></script>
+		<link href="new/assets/page/css/style.css" rel="stylesheet" type="text/css">
+		<link href="new/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="app">
+			<div id="page-wrap">
+				<div id="page-header">
+					<h1 id="page-title">
+						<span class="l1">T</span><span class="l2">r</span><span class="l3">a</span><span class="l4">d</span><span class="l5">e</span><span class="l6">r</span>
+					</h1>
+					<div id="app-version"><app-version :manager-info="managerInfo"></app-version></div>
+					<ul id="page-menu">
+						<side-menu :exchange-list="exchangeList" :strategy-list="strategyList"></side-menu>
+					</ul>
+				</div>
+				<div id="page-content">
+					<div id="page-body">
+						<router-view><div class="loading"></div></router-view>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			irRequire(["irAjax", "Manager", "Exchange", "Strategy", "Balance", "TimeSeries", "App"], () => {
+				var app = new App();
+				app.run("#app");
+			});
+		</script>
+	</body>
+</html>

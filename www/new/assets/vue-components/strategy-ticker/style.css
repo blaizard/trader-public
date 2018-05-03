@@ -1,0 +1,53 @@
+.strategy-ticker {
+	display: inline-block;
+	position: relative;
+	border: 1px solid #ddd;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	white-space: nowrap;
+	min-width: 220px;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+
+.strategy-ticker:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.strategy-ticker .name,
+.strategy-ticker .profit,
+.strategy-ticker .nb-operations,
+.strategy-ticker .performance {
+	margin: 0 5px;
+	padding: 2px;
+}
+
+.strategy-ticker .name {
+	font-weight: bold;
+}
+
+.strategy-ticker .profit,
+.strategy-ticker .nb-operations,
+.strategy-ticker .performance {
+	font-size: 0.7em;
+	line-height: 0.7em;
+}
+
+.strategy-ticker .performance progress[value]::-webkit-progress-bar {
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+.strategy-ticker .performance progress[value]::-webkit-progress-value {
+	background-color: #999;
+}
+
+.strategy-ticker .performance progress {
+	-webkit-appearance: none;
+	appearance: none;
+
+	width: 100px;
+	height: 1em;
+	display: inline-block;
+	vertical-align: middle;
+}

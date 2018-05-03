@@ -1,0 +1,36 @@
+table tr {
+	white-space: nowrap;
+}
+
+.mouseovermark {
+	background-color: #f0f8ff !important;
+}
+
+.decrease,
+.increase {
+	transition: all 1s ease-in;
+}
+
+.decrease:after {
+	font-family: FontAwesome;
+	content: "\f175";
+	padding-left: 5px;
+}
+
+.decrease {
+	color: #a00;
+}
+
+.increase:after {
+	font-family: FontAwesome;
+	content: "\f176";
+	padding-left: 5px;
+}
+
+.increase {
+	color: #0a0;
+}
+
+span.header-metrics {
+	font-size: 20px;
+}

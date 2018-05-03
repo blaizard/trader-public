@@ -1,0 +1,74 @@
+.exchange-ticker {
+	display: inline-block;
+	position: relative;
+	border: 1px solid #ddd;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	white-space: nowrap;
+	min-width: 250px;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+
+.exchange-ticker:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.exchange-ticker .status {
+	width: 10px;
+	height: 100%;
+	position: absolute;
+	text-indent: 100px;
+	overflow: hidden;
+}
+
+.exchange-ticker.connected .status {
+	background-color: #5fba7d;
+}
+
+.exchange-ticker.disconnected .status {
+	background-color: #e24825;
+}
+
+.exchange-ticker.connecting .status,
+.exchange-ticker.disconnecting .status {
+	background-color: #e67e22;
+}
+
+.exchange-ticker .name {
+	float: left;
+	font-size: 1.2em;
+}
+
+.exchange-ticker .balance {
+	width: auto;
+	float: right;
+}
+
+.exchange-ticker .balance .profit {
+	font-size: 0.7em;
+	display: block;
+	margin-top: -0.5em;
+	text-align: right;
+}
+
+.exchange-ticker .name,
+.exchange-ticker .time,
+.exchange-ticker .message,
+.exchange-ticker .balance {
+	margin: 0 15px;
+	padding: 2px;
+}
+
+.exchange-ticker .name {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.exchange-ticker .time,
+.exchange-ticker .message {
+	clear: both;
+	font-size: 0.7em;
+	line-height: 0.7em;
+	text-transform: capitalize;
+}

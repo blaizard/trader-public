@@ -1,0 +1,9 @@
+.make/
+Makefile
+Makefile.old
+config.mk
+*.o
+*.d
+/dist/
+/config.hpp
+/build/

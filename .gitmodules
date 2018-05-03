@@ -1,0 +1,3 @@
+[submodule "IrStd"]
+	path = IrStd
+	url = https://github.com/blaizard/IrStd.git

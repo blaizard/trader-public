@@ -1,0 +1,53 @@
+.balance {
+	width: 600px;
+}
+
+.balance .charts {
+	position: relative;
+	height: 210px;
+}
+
+.balance .pie-chart {
+	width: 300px;
+	position: absolute;
+	right: -10px;
+}
+
+.balance .history-chart {
+	width: 400px;
+	position: absolute;
+}
+
+.balance canvas {
+	width: 100%;
+}
+
+.balance table {
+	font-size: 0.8em;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.balance table tr.selected {
+	background-color: #eee;
+}
+
+.balance td .color {
+	width: 1em;
+	height: 1em;
+	border: 1px solid #ddd;
+	margin-left: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.balance td:nth-child(1) {
+	text-align: right;
+}
+
+.balance th,
+.balance td {
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
